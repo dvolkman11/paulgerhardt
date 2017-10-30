@@ -1,0 +1,28 @@
+%schaltet einen Header für jede Buchstabengruppe ein
+headings_flag 1 
+
+%wird jedem Buchstaben vorangestellt
+heading_prefix "\\textbf{\\textsf{"
+
+%wird jedem Buchstaben hinten angestellt
+heading_suffix "}}\\nopagebreak\n"
+
+%das sind die Pünktchen zwischen Wort und (erster) Seitenzahl
+delim_0 " \\dotfill" 
+quote		'<'
+%%level		'>'
+symhead_positive "Symbole"
+preamble
+  "\\begin{theindex}\n"
+item_1
+  "\\par\\leavevmode\\hangindent10pt\\makebox[10pt][l]{--}"
+item_01
+  "\\par\\leavevmode\\hangindent10pt\\makebox[10pt][l]{--}"
+item_x1
+  "\\par\\leavevmode\\hangindent10pt\\makebox[10pt][l]{--}"
+item_2
+  "\\par\\leavevmode\\hangindent20pt\\makebox[20pt][l]{-- -- }"
+item_12
+  "\\par\\leavevmode\\hangindent20pt\\makebox[20pt][l]{-- -- }"
+item_x2
+  "\\par\\leavevmode\\hangindent20pt\\makebox[20pt][l]{-- -- }"
