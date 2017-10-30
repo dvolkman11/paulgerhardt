@@ -1,0 +1,180 @@
+%StartInfo%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Desc:  Paul Gerhard
+%  Desc:  Gedichte 
+%  Desc:  Zweispaltiger Satz mit \verse
+%  Tags:  GERHARD VERSE 
+%  File:  pg-main.tex
+%  Autor: dv
+%  Ref:   
+%  Mod:   06.10.2016/dv/initial
+%  Mod:   
+%EndInfo%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[ngerman]{babel}
+
+%%% PAGE DIMENSIONS ---------------------------------------------------------------------
+\usepackage[centering,includeheadfoot,margin=2cm]{geometry}
+%\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\geometry{a4paper}       % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape}   % set up the page for landscape
+%                           read geometry.pdf for detailed page layout information
+
+
+%%% PACKAGES ---------------------------------------------------------------------------
+%\usepackage{graphicx} % support the \includegraphics command and options
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+%\usepackage{booktabs} % for much better looking tables
+%\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{verse}
+\usepackage{attrib}                                                                                                      
+
+%%% Ein Versuch, die 12 Strophen auf eine Seite zu setzen: ----------------------------
+\parindent0em
+\setlength{\voffset}{-1.5cm}
+\setlength{\hoffset}{-0.5cm}
+\setlength{\textheight}{27cm}
+\setlength{\textwidth}{17cm}
+\setlength{\columnwidth}{7cm}
+\setlength{\columnsep}{1cm}
+\setlength{\vleftskip}{0.1cm}
+\setlength{\oddsidemargin}{0.1cm}
+\setlength{\vgap}{0.1cm}
+%\setlength{\stanzaskip}{1.3cm}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+%\newcommand*{\plogo}{\fbox{X} % Generic publisher logo
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+{\LARGE PAUL GERHARDT\\[0.9\baselineskip] Frisch auf, getrost und unverzagt!}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+\scshape % Small caps
+Die Gedichte Paul Gerhardts  \\ % Tagline(s) or further description
+für Kerstin zum 60'sten Geburtstag \\%[\baselineskip] % Tagline(s) or further description
+%Siegersleben\\ 2016\par % Location and year
+
+\vspace*{25\baselineskip} % Whitespace between location/year and editors
+
+%Gesetzt \\[\baselineskip]
+%von \\[\baselineskip]
+%{\Large Dietmar Volkmann\par} % Editor list
+%{\itshape The University of California \\ Berkeley\par} % Editor affiliation
+
+\vfill % Whitespace between editor names and publisher logo
+
+%\plogo \\[0.9\baselineskip] % Publisher logo
+{\scshape Siegersleben}\par % Location and year
+{\scshape 2017} \\[0.9\baselineskip] % Year published
+{\large Dietmar Volkmann}\par % Publisher
+
+\endgroup}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document} 
+
+%\pagestyle{empty} % Removes page numbers
+
+%\titleGP % This command includes the title page
+%\newpage 
+
+%\frontmatter% ---------------------------------------------------------------------------
+
+
+%\mainmatter% ---------------------------------------------------------------------------
+
+\section*{\centerline{\LARGE Test-Test-Test}}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.2pt}\\[\baselineskip] % Thick horizontal line
+
+\centerline{\scshape Test}    
+\vspace*{2\baselineskip}
+\centerline{\scshape Test}
+\vspace*{2\baselineskip}
+\centerline{\scshape Test}
+%\vspace*{55\baselineskip}
+
+\newpage
+
+\subsection*{\centerline{Du meine Seele singe}}
+
+\input{pg-Du-meine-Seele.tex} 
+
+%\input{pg-backmatter.tex}
+
+\empty % This command includes the title page
+\newpage
+
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+%{\LARGE PAUL GERHARDT\\[0.9\baselineskip] Frisch auf, getrost und unverzagt!}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+%\scshape % Small caps
+%Die Gedichte Paul Gerhardts  \\ % Tagline(s) or further description
+%für Kerstin zum 60'sten Geburtstag \\%[\baselineskip] % Tagline(s) or further description
+%Siegersleben\\ 2016\par % Location and year
+
+\vspace*{25\baselineskip} % Whitespace between location/year and editors
+
+%Gesetzt \\[\baselineskip]
+%von \\[\baselineskip]
+%{\Large Dietmar Volkmann\par} % Editor list
+%{\itshape The University of California \\ Berkeley\par} % Editor affiliation
+
+\vfill % Whitespace between editor names and publisher logo
+
+%\plogo \\[0.9\baselineskip] % Publisher logo
+{\scshape * * *}\par % Location and year
+\newpage
+
+\section*{\centerline{\LARGE Test1-Test1-Test1}}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.2pt}\\[\baselineskip] % Thick horizontal line
+
+\centerline{\scshape Test}    
+\vspace*{2\baselineskip}
+\centerline{\scshape Test}
+\vspace*{2\baselineskip}
+\centerline{\scshape Test}
+%\vspace*{55\baselineskip}
+
+\newpage
+
+\subsection*{\centerline{Titel1}}
+
+\input{pg-Herr-du-erforschest.tex} 
+
+\end{document}

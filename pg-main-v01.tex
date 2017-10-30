@@ -1,0 +1,1259 @@
+%StartInfo%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Desc:  Paul Gerhard
+%  Desc:  Gedichte 
+%  Desc:  Zweispaltiger Satz mit \verse
+%  Tags:  GERHARD VERSE 
+%  File:  pg-main-v01.tex
+%  Autor: dv
+%  Ref:   
+%  Mod:   
+%  Mod:   06.10.2016/dv/initial
+%EndInfo%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[ngerman]{babel}
+
+%%% PAGE DIMENSIONS ---------------------------------------------------------------------
+\usepackage[centering,includeheadfoot,margin=2cm]{geometry}
+%\usepackage[a4paper, top=3cm, bottom=3cm]{geometry}
+\geometry{a4paper}       % or letterpaper (US) or a5paper or....
+% \geometry{margins=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape}   % set up the page for landscape
+%                           read geometry.pdf for detailed page layout information
+
+%\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES ---------------------------------------------------------------------------
+%\usepackage{booktabs} % for much better looking tables
+%\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+%\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{verse}
+\usepackage{attrib}                                                                                                      
+
+\usepackage{makeidx}
+\makeindex
+
+%%% dv: Bis zu 12 Strophen in zwei Spalten auf eine Seite zu setzen: --------------------
+\parindent0em
+\setlength{\voffset}{-1.5cm}
+\setlength{\hoffset}{-0.5cm}
+\setlength{\textheight}{27cm}
+\setlength{\textwidth}{17cm}
+\setlength{\columnwidth}{7cm}
+\setlength{\columnsep}{1cm}
+\setlength{\vleftskip}{0.1cm}
+\setlength{\oddsidemargin}{0.1cm}
+\setlength{\vgap}{0.1cm}
+%\setlength{\stanzaskip}{1.3cm}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+%\newcommand*{\plogo}{\fbox{X} % Generic publisher logo
+\newcommand*{\titleGP}{\begingroup % Create the command for including the title page in the document
+\centering % Center all text
+\vspace*{\baselineskip} % White space at the top of the page
+
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[\baselineskip] % Thin horizontal line
+
+{\LARGE PAUL GERHARDT\\[0.9\baselineskip] Frisch auf, getrost und unverzagt!}\\[0.2\baselineskip] % Title
+
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+
+\scshape % Small caps
+Gedichte und Lieder  \\ % Tagline(s) or further description
+%für Kerstin zum 60'sten Geburtstag \\%[\baselineskip] % Tagline(s) or further description
+%Siegersleben\\ 2016\par % Location and year
+
+\vspace*{25\baselineskip} % Whitespace between location/year and editors
+
+%Gesetzt \\[\baselineskip]
+%von \\[\baselineskip]
+%{\Large Dietmar Volkmann\par} % Editor list
+%{\itshape The University of California \\ Berkeley\par} % Editor affiliation
+
+\vfill % Whitespace between editor names and publisher logo
+
+%\plogo \\[0.9\baselineskip] % Publisher logo
+{\scshape Siegersleben}\par % Location and year
+{\scshape 2017} \\[0.9\baselineskip] % Year published
+{\large S.D.G.}\par % Publisher
+
+\thispagestyle{empty}%dv
+\endgroup}%
+
+
+%----------------------------------------------------------------------------------------
+%	 DOCUMENT
+%----------------------------------------------------------------------------------------
+\pagestyle{empty}
+%dv: Layout des Inhaltsverzeichnisses definieren:
+\AtBeginDocument{%
+  \renewcommand\contentsname{%
+    \centerline{INHALT}
+    \rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt} 
+    \rule{\textwidth}{1.2pt}\\[\baselineskip]
+  }
+}
+
+
+\begin{document} 
+
+
+\titleGP % This command includes the title page
+
+\frontmatter% ---------------------------------------------------------------------------
+
+\input{zierseite.tex}
+\input{widmung.tex}
+
+\pagestyle{plain}
+
+
+\tableofcontents
+\clearpage
+\input{zierseite.tex}
+
+\mainmatter% ----------------------------------------------------------------------------
+
+\section*{\centerline{\LARGE ADVENT}}
+\addcontentsline{toc}{section}{ADVENT}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.2pt}\\[\baselineskip] % Thick horizontal line
+
+
+\index{ Gedichte zum Advent}
+%      ^ Das Lehrzeichen am Anfang bring diese Einträge an den Anfang des Index!
+
+\centerline{\scshape Die Zeit ist nunmehr nah}    
+\vspace*{2\baselineskip}
+\centerline{\scshape Warum willst du draußen stehen}
+\vspace*{2\baselineskip}
+\centerline{\scshape Wie soll ich dich empfangen}
+%\vspace*{55\baselineskip}
+
+\newpage
+%
+\subsection*{\centerline{Die Zeit ist nunmehr nah}}
+\addcontentsline{toc}{subsection}{Die Zeit ist nunmehr nah}
+\input{pg-Die-Zeit-ist.tex}
+\index{Die Zeit ist nunmehr nah}
+\newpage
+\subsection*{\centerline{Warum willst du draußen stehen}}
+\addcontentsline{toc}{subsection}{Warum willst du draußen stehen}
+\input{pg-Warum-willst-du.tex}
+\index{Warum willst du draußen stehen}
+\newpage
+\subsection*{\centerline{Wie soll ich dich empfangen}}
+\addcontentsline{toc}{subsection}{Wie soll ich dich empfangen}
+\input{pg-Wie-soll-ich.tex}
+\index{Wie soll ich dich empfangen}
+
+%\newpage
+\input{zierseite.tex}
+%\newpage
+
+\section*{\centerline{\LARGE WEIHNACHTEN}}
+\addcontentsline{toc}{section}{WEIHNACHTEN}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte zu Weihnachten}
+
+\centerline{\scshape Alle, die ihr, Gott zu Ehren }
+\vspace*{2\baselineskip}
+\centerline{\scshape Fröhlich soll mein Herze springen }
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich steh an deiner Krippen hier }
+\vspace*{2\baselineskip}
+\centerline{\scshape Kommt und laßt uns Christum ehren}
+\vspace*{2\baselineskip}
+\centerline{\scshape O Jesu Christ, dein Kripplein ist }
+\vspace*{2\baselineskip}
+\centerline{\scshape Schaut, schaut, was ist für Wunder dar? }
+\vspace*{2\baselineskip}
+\centerline{\scshape Wir singen dir, Immanuel }
+
+\newpage
+
+\subsection*{\centerline{Alle, die ihr, Gott zu Ehren}}
+\addcontentsline{toc}{subsection}{Alle die ihr Gott zu Ehren}
+\input{pg-Alle-die-ihr.tex}
+\index{Alle, die ihr, Gott zu Ehren}
+\newpage
+\subsection*{\centerline{Fröhlich soll mein Herze springen}}
+\addcontentsline{toc}{subsection}{Fröhlich soll mein Herze springen}
+\input{pg-Froehlich-soll-mein.tex}
+\index{Fröhlich soll mein Herze springen}
+\newpage
+\subsection*{\centerline{Ich steh an deiner Krippen hier}}
+\addcontentsline{toc}{subsection}{Ich steh an deiner Krippen hier}
+\input{pg-Ich-steh-an.tex}
+\index{Ich steh an deiner Krippen hier}
+\newpage
+\subsection*{\centerline{Kommt und laßt uns Christum ehren}}
+\addcontentsline{toc}{subsection}{Kommt und laßt uns Christum ehren}
+\input{pg-Kommt-und-lasst.tex}
+\index{Kommt und laßt uns Christum ehren}
+\newpage
+\subsection*{\centerline{O Jesu Christ, dein Kripplein ist}}
+\addcontentsline{toc}{subsection}{O Jesu Christ dein Kripplein ist}
+\input{pg-O-Jesu-Christ.tex}
+\index{O Jesu Christ, dein Kripplein ist}
+\newpage
+\subsection*{\centerline{Schaut, schaut, was ist für Wunder dar?}}
+\addcontentsline{toc}{subsection}{Schaut schaut was ist für Wunder dar?}
+\input{pg-Schaut-schaut-was.tex}
+\index{Schaut, was für ein Wunder}
+\newpage
+\subsection*{\centerline{Wir singen dir, Immanuel}}
+\addcontentsline{toc}{subsection}{Wir singen dir Immanuel}
+\input{pg-Wir-singen-dir.tex}
+\index{Wir singen dir, Immanuel}
+\newpage
+
+%\newpage
+
+\section*{\centerline{\LARGE NEUJAHR}}
+\addcontentsline{toc}{section}{NEUJAHR}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte zu Neujahr}
+
+\centerline{\scshape Nun laßt uns gehn und treten }
+\vspace*{2\baselineskip}
+\centerline{\scshape Warum machet solche Schmerzen }
+
+\newpage
+  
+\subsection*{\centerline{Nun laßt uns gehn und treten}}
+\addcontentsline{toc}{subsection}{Nun laßt uns gehn und treten}
+\input{pg-Nun-lasst-uns.tex}
+\index{Nun laßt uns gehn und treten}
+\newpage
+\subsection*{\centerline{Warum machet solche Schmerzen}}
+\addcontentsline{toc}{subsection}{Warum machet solche Schmerzen}
+\input{pg-Warum-machet-solche.tex}
+\index{Warum machet solche Schmerzen}
+\newpage
+
+\newpage
+
+\section*{\centerline{\LARGE PASSION}}
+\addcontentsline{toc}{section}{PASSION}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte zur Passion}
+
+\centerline{\scshape Ein Lämmlein geht und trägt die Schuld }
+\vspace*{2\baselineskip}
+\centerline{\scshape Gegrüßet seist du, Gott mein Heil }
+\vspace*{2\baselineskip}
+\centerline{\scshape Gegrüßet seist du, meine Kron }
+\vspace*{2\baselineskip}
+\centerline{\scshape Hör an, mein Herz, die sieben Wort }
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich grüße dich, du frömmster Mann }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Haupt voll Blut und Wunden }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Herz des Königs aller Welt }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Mensch, beweine deine Sünd }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Welt, sieh hier dein Leben }
+\vspace*{2\baselineskip}
+\centerline{\scshape Sei mir tausendmal gegrüßet }
+\vspace*{2\baselineskip}
+\centerline{\scshape Sei wohl gegrüßet, guter Hirt}
+\vspace*{2\baselineskip}
+\centerline{\scshape Siehe, mein getreuer Knecht }
+\vspace*{2\baselineskip}
+\centerline{\scshape Als Gottes Lamm und Leue }
+
+\newpage
+
+\subsection*{\centerline{Ein Lämmlein geht und trägt die Schuld}}
+\addcontentsline{toc}{subsection}{Ein Lämmlein geht und trägt die Schuld}
+\input{pg-Ein-Laemmlein-geht.tex}
+\index{Ein Lämmlein geht}
+\newpage
+\subsection*{\centerline{Gegrüßet seist du, Gott mein Heil}}
+\addcontentsline{toc}{subsection}{Gegrüßet seist du Gott mein Heil}
+\input{pg-Gegruesset-seist-du-Gott.tex}
+\index{Gegrüßet seist du, Gott mein Heil}
+\newpage
+\subsection*{\centerline{Gegrüßet seist du, meine Kron}}
+\addcontentsline{toc}{subsection}{Gegrüßet seist du meine Kron}
+\input{pg-Gegruesset-seist-du.tex}
+\index{Gegrüßet seist du, meine Kron}
+\newpage
+\subsection*{\centerline{Hör an, mein Herz, die sieben Wort}}
+\addcontentsline{toc}{subsection}{Hör an mein Herz die sieben Wort}
+\input{pg-Hoer-an-mein.tex}
+\index{Hör an mein Herz, die sieben Wort}
+\newpage
+\subsection*{\centerline{Ich grüße dich, du frömmster Mann}}
+\addcontentsline{toc}{subsection}{Ich grüße dich du frömmster Mann}
+\input{pg-Ich-gruesse-dich.tex}
+\index{Ich grüße dich, du frömmster Mann}
+\newpage
+\subsection*{\centerline{O Haupt voll Blut und Wunden}}
+\addcontentsline{toc}{subsection}{O Haupt voll Blut und Wunden}
+\input{pg-O-Haupt-voll.tex}
+\index{O Haupt voll Blut und Wunden}
+\newpage
+\subsection*{\centerline{O Herz des Königs aller Welt}}
+\addcontentsline{toc}{subsection}{O Herz des Königs aller Welt}
+\input{pg-O-Herz-des.tex}
+\index{O Herz des Königs aller Welt}
+\newpage
+\subsection*{\centerline{O Mensch, beweine deine Sünd}}
+\addcontentsline{toc}{subsection}{O Mensch beweine deine Sünd}
+\input{pg-O-Mensch-beweine.tex}
+\index{O Mensch beweine deine Sünd}
+\newpage
+\subsection*{\centerline{O Welt, sieh hier dein Leben}}
+\addcontentsline{toc}{subsection}{O Welt sieh hier dein Leben}
+\input{pg-O-Welt-sieh.tex}
+\index{O Welt, sieh hier dein Leben}
+\newpage
+\subsection*{\centerline{Sei mir tausendmal gegrüßet}}
+\addcontentsline{toc}{subsection}{Sei mir tausendmal gegrüßet}
+\input{pg-Sei-mir-tausendmal.tex}
+\index{Sei mir gegrüßet tausendmal}
+\newpage
+\subsection*{\centerline{Sei wohl gegrüßet, guter Hirt}}
+\addcontentsline{toc}{subsection}{Sei wohl gegrüßet guter Hirt}
+\input{pg-Sei-wohl-gegruesset.tex}
+\index{Sei wohl gegrüßet, guter Hirt}
+\newpage
+\subsection*{\centerline{Siehe, mein getreuer Knecht}}               % witt:1851:geliebter
+\addcontentsline{toc}{subsection}{Siehe mein getreuer Knecht}
+\input{pg-Siehe-mein-getreuer.tex}
+\index{Siehe, mein getreuer Knecht}
+\newpage
+\subsection*{\centerline{Als Gottes Lamm und Leue}}                  %witt:1851:Auf das Begräbnis Jesu.
+\addcontentsline{toc}{subsection}{Als Gottes Lamm und Leue}
+\input{pg-Als-Gottes-Lamm.tex}
+\index{Als Gottes Lamm und Leue}
+\newpage
+
+\newpage
+
+\section*{\centerline{\LARGE OSTERN - PFINGSTEN - TRINITATIS}}
+\addcontentsline{toc}{section}{OSTERN - PFINGSTEN - TRINITATIS}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte zu Ostern und Pfingsten}
+
+\centerline{\scshape Auf auf, mein Herz, mit Freuden }
+\vspace*{2\baselineskip}
+\centerline{\scshape Nun freut euch hier und überall }
+\vspace*{2\baselineskip}
+\centerline{\scshape Sei fröhlich alles weit und breit}
+\vspace*{2\baselineskip}
+\centerline{\scshape Gott Vater, sende deinen Geist }
+\vspace*{2\baselineskip}
+\centerline{\scshape O du allersüß'ste Freude }
+\vspace*{2\baselineskip}
+\centerline{\scshape Zeuch ein zu deinen Toren }
+\vspace*{2\baselineskip}
+\centerline{\scshape Was alle Weisheit in der Welt }
+
+\newpage
+
+\subsection*{\centerline{Auf auf, mein Herz, mit Freuden}}
+\addcontentsline{toc}{subsection}{Auf auf mein Herz mit Freuden}
+\input{pg-Auf-auf-mein.tex}
+\index{Auf auf, mein Herz mit Freuden}
+\newpage
+\subsection*{\centerline{Nun freut euch hier und überall}}
+\addcontentsline{toc}{subsection}{Nun freut euch hier und überall}
+\input{pg-Nun-freut-euch.tex}
+\index{Nun freut euch hier und überall}
+\newpage
+\subsection*{\centerline{Sei fröhlich alles weit und breit}}
+\addcontentsline{toc}{subsection}{Sei fröhlich alles weit und breit}
+\input{pg-Sei-froehlich-alles.tex}
+\index{Sei fröhlich alles weit und breit}
+\newpage
+\subsection*{\centerline{Gott Vater, sende deinen Geist}}
+\addcontentsline{toc}{subsection}{Gott Vater sende deinen Geist}
+\input{pg-Gott-Vater-sende.tex}
+\index{Gott Vater, sende deinen Geist}
+\newpage
+\subsection*{\centerline{O du allersüß'ste Freude}}
+\addcontentsline{toc}{subsection}{O du allersüß'ste Freude}
+\input{pg-O-du-allersuessste.tex}
+\index{O du allersüßte Freude}
+\newpage
+\subsection*{\centerline{Zeuch ein zu deinen Toren}}
+\addcontentsline{toc}{subsection}{Zeuch ein zu deinen Toren}
+\input{pg-Zeuch-ein-zu.tex}
+\index{Zeuch ein zu deinen Toren}
+\newpage
+\subsection*{\centerline{Was alle Weisheit in der Welt}}
+\addcontentsline{toc}{subsection}{Was alle Weisheit in der Welt}
+\input{pg-Was-alle-Weisheit.tex}
+\index{Was aller Weisheit in der Welt}
+\newpage
+
+%\section*{\centerline{\LARGE PFINGSTEN}}
+%\centerline{\scshape Gott Vater, sende deinen Geist}
+%\centerline{\scshape O du allersüß'ste Freude}
+%\centerline{\scshape Zeuch ein zu deinen Toren}
+
+%\newpage
+
+%
+%\subsection*{Gott Vater, sende deinen Geist}
+%\subsection*{O du allersüß'ste Freude}
+%\subsection*{Zeuch ein zu deinen Toren}
+
+
+%\section*{\centerline{Trinitatis}}
+%\subsection*{ Was alle Weisheit in der Welt}
+
+\section*{\centerline{\LARGE TAUFE - ABENDMAHL - BEICHTE}}
+\addcontentsline{toc}{section}{TAUFE - ABENDMAHl - BEICHTE}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte zu Taufe und Abendmahl}
+
+\centerline{\scshape Du Volk, das du getaufet bist }
+\vspace*{2\baselineskip}
+\centerline{\scshape Herr Jesu, meine Liebe }
+\vspace*{2\baselineskip}
+\centerline{\scshape Herr, höre, was mein Mund }
+\vspace*{2\baselineskip}
+\centerline{\scshape Herr, ich will gar gerne bleiben }
+\vspace*{2\baselineskip}
+\centerline{\scshape Weg, mein Herz, mit den Gedanken }
+
+\newpage
+
+\subsection*{\centerline{Du Volk, das du getaufet bist}}
+\addcontentsline{toc}{subsection}{Du Volk das du getaufet bist}
+\input{pg-Du-Volk-das.tex}
+\index{Du Volk, das du getaufet bist}
+\newpage
+\subsection*{\centerline{Herr Jesu, meine Liebe}}
+\addcontentsline{toc}{subsection}{Herr Jesu meine Liebe}
+\input{pg-Herr-Jesu-meine.tex}
+\index{Herr Jesu, meine Liebe}
+\newpage
+\subsection*{\centerline{Herr, höre, was mein Mund}}
+\addcontentsline{toc}{subsection}{Herr höre was mein Mund}
+\input{pg-Herr-hoere-was.tex}
+\index{Herr, höre, was mein Mund}
+\newpage
+\subsection*{\centerline{Herr, ich will gar gerne bleiben}}
+\addcontentsline{toc}{subsection}{Herr ich will gar gerne bleiben}
+\input{pg-Herr-ich-will.tex}
+\index{Herr, ich will gar gerne bleiben}
+\newpage
+\subsection*{\centerline{Weg, mein Herz, mit den Gedanken}}
+\addcontentsline{toc}{subsection}{Weg mein Herz mit den Gedanken}
+\input{pg-Weg-mein-Herz.tex}
+\index{Weg, mein Herz, mit den Gedanken}
+\newpage
+
+
+%\section*{\centerline{Abendmahl}}
+%\subsection*{ Herr Jesu, meine Liebe}
+
+%\section*{\centerline{Buße}}
+%\subsection*{Herr, höre, was mein Mund}
+%\subsection*{Herr, ich will gar gerne bleiben}
+%\subsection*{Weg, mein Herz, mit den Gedanken}
+
+\section*{\centerline{\LARGE LEID UND TROST}}
+\addcontentsline{toc}{section}{LEID UND TROST}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte von Leid und Trost}
+
+\centerline{\scshape Ach Herr, wie lange willst du mein}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ach treuer Gott, barmherzigs Herz }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Auf den Nebel folgt die Sonne}                    %witt: Sonn'
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Barmherzger Vater, höchster Gott }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Befiehl du deine Wege }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Du bist ein Mensch, das weißt du wohl }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Du liebe Unschuld du, wie schlecht wirst du geacht't }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Geduld ist euch vonnöten }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Gib dich zufrieden und sei stille }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Gott ist mein Licht, der Herr mein Heil }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Herr, der du vormals hast dein Land }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Herr, was hast du im Sinn? }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich erhebe, Herr, zu dir }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich hab in Gottes Herz und Sinn }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich habs verdient, was will ich noch }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ist Ephraim nicht meine Kron? }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ist Gott für mich, so trete }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Kommt, ihr traurigen Gemüter }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Meine Seele ist in der Stille }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Nicht so traurig, nicht so sehr} 
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Noch dennoch mußt du drum }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Nun, du lebest, unsre Krone}                   %witt:? --Trost
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Schwing dich auf zu deinem Gott }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Sei wohlgemut, o Christenseel }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Warum sollt ich mich doch grämen? }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Was Gott gefällt, mein frommes Kind} 
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Was soll ich doch, o Ephraim }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Was trotzest du, stolzer Tyrann? }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Wer unterm Schirm des Höchsten sitzt }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Wie ist so groß und schwer die Last }
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Wie lang, o Herr, wie lange }
+
+\newpage
+
+\subsection*{\centerline{Ach Herr, wie lange willst du mein}}
+\addcontentsline{toc}{subsection}{Ach Herr wie lange willst du mein}
+\input{pg-Ach-Herr-wie.tex}
+\index{Ach Herr, wie lange willst du mein}
+\newpage
+\subsection*{\centerline{Ach treuer Gott, barmherzigs Herz}}
+\addcontentsline{toc}{subsection}{Ach treuer Gott barmherzigs Herz}
+\input{pg-Ach-treuer-Gott.tex}
+\index{Ach treuer Gott, barmherzigs Herz}
+\newpage
+\subsection*{\centerline{Auf den Nebel folgt die Sonne}}            %witt: Sonn'
+\addcontentsline{toc}{subsection}{Auf den Nebel folgt die Sonne}            %witt: Sonn'}
+\input{pg-Auf-den-Nebel.tex}
+\index{Auf den Nebel folgt die Sonne}
+\newpage
+\subsection*{\centerline{Barmherzger Vater, höchster Gott}}
+\addcontentsline{toc}{subsection}{Barmherzger Vater höchster Gott}
+\input{pg-Barmherzger-Vater-hoechster.tex}
+\index{Barmherziger Vater, höchster Gott}
+\newpage
+\newpage
+\subsection*{\centerline{Befiehl du deine Wege}}
+\addcontentsline{toc}{subsection}{Befiehl du deine Wege}
+\input{pg-Befiehl-du-deine.tex}
+\index{Befiel du deine Wege}
+\newpage
+\subsection*{\centerline{Du bist ein Mensch, das weißt du wohl}}
+\addcontentsline{toc}{subsection}{Du bist ein Mensch das weißt du wohl}
+\input{pg-Du-bist-ein.tex}
+\index{Du bist ein Mensch, das weißt du wohl}
+\newpage
+\subsection*{\centerline{Du liebe Unschuld du, wie schlecht wirst du geacht't}}
+\addcontentsline{toc}{subsection}{Du liebe Unschuld du wie schlecht wirst du geacht't}
+\input{pg-Du-liebe-Unschuld.tex}
+\index{Du liebe Unschuld}
+\newpage
+\subsection*{\centerline{Geduld ist euch vonnöten}}
+\addcontentsline{toc}{subsection}{Geduld ist euch vonnöten}
+\input{pg-Geduld-ist-euch.tex}
+\index{Geduld ist euch vonnöten}
+\newpage
+\subsection*{\centerline{Gib dich zufrieden und sei stille}}
+\addcontentsline{toc}{subsection}{Gib dich zufrieden und sei stille}
+\input{pg-Gib-dich-zufrieden.tex}
+\index{Gib dich zufrieden und sei stille}
+\newpage
+\subsection*{\centerline{Gott ist mein Licht, der Herr mein Heil}}
+\addcontentsline{toc}{subsection}{Gott ist mein Licht der Herr mein Heil}
+\input{pg-Gott-ist-mein.tex}
+\index{Gott ist mein Licht, der Herr mein Heil}
+\newpage
+\subsection*{\centerline{Herr, der du vormals hast dein Land}}
+\addcontentsline{toc}{subsection}{Herr der du vormals hast dein Land}
+\input{pg-Herr-der-du.tex}
+\index{Herr, der du vormals hast dein Land}
+\newpage
+\subsection*{\centerline{Herr, was hast du im Sinn?}}
+\addcontentsline{toc}{subsection}{Herr was hast du im Sinn?}
+\input{pg-Herr-was-hast.tex}
+\index{Herr, was hast du im Sinn}
+\newpage
+\subsection*{\centerline{Ich erhebe, Herr, zu dir}}
+\addcontentsline{toc}{subsection}{Ich erhebe Herr zu dir}
+\input{pg-Ich-erhebe-Herr.tex}
+\index{Ich erhebe, Herr, zu dir}
+\newpage
+\subsection*{\centerline{Ich hab in Gottes Herz und Sinn}}
+\addcontentsline{toc}{subsection}{Ich hab in Gottes Herz und Sinn}
+\input{pg-Ich-hab-in.tex}
+\index{Ich hab in Gottes Herz und Sinn}
+\newpage
+\subsection*{\centerline{Ich habs verdient, was will ich doch}}
+\addcontentsline{toc}{subsection}{Ich habs verdient was will ich doch}
+\input{pg-Ich-habs-verdient.tex}
+\index{Ich habs verdient, was will ich noch}
+\newpage
+\subsection*{\centerline{Ist Ephraim nicht meine Kron?}}
+\addcontentsline{toc}{subsection}{Ist Ephraim nicht meine Kron?}
+\input{pg-Ist-Ephraim-nicht.tex}
+\index{Ist Ephraim nicht meine Kron}
+\newpage
+\subsection*{\centerline{Ist Gott für mich, so trete}}
+\addcontentsline{toc}{subsection}{Ist Gott für mich so trete}
+\input{pg-Ist-Gott-fuer.tex}
+\index{Ist Gott für mich, so trete}
+\newpage
+\subsection*{\centerline{Kommt, ihr traurigen Gemüter}}
+\addcontentsline{toc}{subsection}{Kommt ihr traurigen Gemüter}
+\input{pg-Kommt-ihr-traurigen.tex}
+\index{Kommt, Ihr traurigen Gemüter}
+\newpage
+\subsection*{\centerline{Meine Seele ist in der Stille}}
+\addcontentsline{toc}{subsection}{Meine Seele ist in der Stille}
+\input{pg-Meine-Seele-ist.tex}
+\index{Meine Seele ist in der Stille}
+\newpage
+\subsection*{\centerline{Nicht so traurig, nicht so sehr}}
+\addcontentsline{toc}{subsection}{Nicht so traurig nicht so sehr}
+\input{pg-Nicht-so-traurig.tex}
+\index{Nicht so traurig, nicht so sehr}
+\newpage
+\subsection*{\centerline{Noch dennoch mußt du drum nicht ganz}}
+\addcontentsline{toc}{subsection}{Noch dennoch mußt du drum nicht ganz}
+\input{pg-Noch-dennoch-musst.tex}
+\index{Noch dennoch mußt du drum}
+\newpage
+\subsection*{\centerline{Nun, du lebest, unsre Krone}}              %witt:? --Trost
+\addcontentsline{toc}{subsection}{Nun du lebest unsre Krone}              %witt:? --Trost}
+\input{pg-Nun-du-lebest.tex}
+\index{Nun, du lebest, unsre Krone}
+\newpage
+\subsection*{\centerline{Schwing dich auf zu deinem Gott}}
+\addcontentsline{toc}{subsection}{Schwing dich auf zu deinem Gott}
+\input{pg-Schwing-dich-auf.tex}
+\index{Schwing die auf zu deinem Gott}
+\newpage
+\subsection*{\centerline{Sei wohlgemut, o Christenseel}}            %60
+\addcontentsline{toc}{subsection}{Sei wohlgemut o Christenseel}            %60}
+\input{pg-Sei-wohlgemut-o.tex}
+\index{Sei wohlgemut, o Christenheit}
+\newpage
+\subsection*{\centerline{Warum sollt ich mich doch grämen?}}        %witt:denn
+\addcontentsline{toc}{subsection}{Warum sollt ich mich doch grämen?}        %witt:denn}
+\input{pg-Warum-sollt-ich.tex}
+\index{Warum soll ich mich doch grämen}
+\newpage
+\subsection*{\centerline{Was Gott gefällt, mein frommes Kind}}
+\addcontentsline{toc}{subsection}{Was Gott gefällt mein frommes Kind}
+\input{pg-Was-Gott-gefaellt.tex}
+\index{Was Gott gefällt, mein frommes Kind}
+\newpage
+\subsection*{\centerline{Was soll ich doch, o Ephraim}}
+\addcontentsline{toc}{subsection}{Was soll ich doch o Ephraim}
+\input{pg-Was-soll-ich.tex}
+\index{Was soll ich doch, o Ephraim}
+\newpage
+\subsection*{\centerline{Was trotzest du, stolzer Tyrann?}}
+\addcontentsline{toc}{subsection}{Was trotzest du stolzer Tyrann?}
+\input{pg-Was-trotzest-du.tex}
+\index{Was trotzest du, stolzer Tyrann}
+\newpage
+\subsection*{\centerline{Wer unterm Schirm des Höchsten sitzt}}
+\addcontentsline{toc}{subsection}{Wer unterm Schirm des Höchsten sitzt}
+\input{pg-Wer-unterm-Schirm.tex}
+\index{Wer unterm Schirm des Höchsten sitzt}
+\newpage
+\subsection*{\centerline{Wie ist so groß und schwer die Last}}
+\addcontentsline{toc}{subsection}{Wie ist so groß und schwer die Last}
+\input{pg-Wie-ist-so.tex}
+\index{Wie ist so groß und schwer die Last}
+\newpage
+\subsection*{\centerline{Wie lang, o Herr, wie lange}}
+\addcontentsline{toc}{subsection}{Wie lang o Herr wie lange}
+\input{pg-Wie-lang-o.tex}
+\index{Wie lang o Herr, wie lange}
+\newpage
+
+\section*{\centerline{\LARGE BITTEN UND BETEN}}
+\addcontentsline{toc}{section}{BITTEN UND BETEN}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte vom Bitten und Beten}
+
+\centerline{\scshape Herr, aller Weisheit Quell und Grund }
+\vspace*{2\baselineskip}
+\centerline{\scshape Hörst du hier die Ewigkeit?}                  %witt:? --> Bitten und Beten 
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich danke dir demütiglich }
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich danke dir mit Freuden }
+\vspace*{2\baselineskip}
+\centerline{\scshape Jesu, allerliebster Bruder }
+\vspace*{2\baselineskip}
+\centerline{\scshape Nach dir, o Herr, verlanget mich }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Gott, mein Schöpfer, edler Fürst} 
+\vspace*{2\baselineskip}
+\centerline{\scshape O Herrscher in dem Himmelszelt }
+\vspace*{2\baselineskip}
+\centerline{\scshape O Jesu Christ, mein schönstes Licht }
+\vspace*{2\baselineskip}
+\centerline{\scshape Wie der Hirsch im großen Dürsten }
+
+\newpage
+
+\subsection*{\centerline{Herr, aller Weisheit Quell und Grund}}
+\addcontentsline{toc}{subsection}{Herr aller Weisheit Quell und Grund}
+\input{pg-Herr-aller-Weisheit.tex}
+\index{Herr, aller Weisheit Quell und Grund}
+\newpage
+\subsection*{\centerline{Hörst du hier die Ewigkeit?}}
+\addcontentsline{toc}{subsection}{Hörst du hier die Ewigkeit?}
+\input{pg-Hoerst-du-hier.tex}
+\index{Hörst du hier die Ewigkeit}
+\newpage
+\subsection*{\centerline{Ich danke dir demütiglich}}
+\addcontentsline{toc}{subsection}{Ich danke dir demütiglich}
+\input{pg-Ich-danke-dir.tex}
+\index{Ich danke dir demütiglich}
+\newpage
+\subsection*{\centerline{Ich danke dir mit Freuden}}
+\addcontentsline{toc}{subsection}{Ich danke dir mit Freuden}
+\input{pg-Ich-danke-dir2.tex}
+\index{Ich danke dir mit Freuden}
+\newpage
+\subsection*{\centerline{Jesu, allerliebster Bruder}}
+\addcontentsline{toc}{subsection}{Jesu allerliebster Bruder}
+\input{pg-Jesu-allerliebster-Bruder.tex}
+\index{Jesu, allerliebster Bruder}
+\newpage
+\subsection*{\centerline{Nach dir, o Herr, verlanget mich}}
+\addcontentsline{toc}{subsection}{Nach dir o Herr verlanget mich}
+\input{pg-Nach-dir-o.tex}
+\index{Nach dir, o Herr, verlanget mich}
+\newpage
+\subsection*{\centerline{O Gott, mein Schöpfer, edler Fürst}}
+\addcontentsline{toc}{subsection}{O Gott mein Schöpfer edler Fürst}
+\input{pg-O-Gott-mein.tex}
+\index{O Gott, mein Schöpfer, edler Fürst}
+\newpage
+\subsection*{\centerline{O Herrscher in dem Himmelszelt}}
+\addcontentsline{toc}{subsection}{O Herrscher in dem Himmelszelt}
+\input{pg-O-Herrscher-in.tex}
+\index{O Herscher in dem Himmelszelt}
+\newpage
+\subsection*{\centerline{O Jesu Christ, mein schönstes Licht}}
+\addcontentsline{toc}{subsection}{O Jesu Christ mein schönstes Licht}
+\input{pg-O-Jesu-Christ2.tex}
+\index{O Jesu Christ, mein schönstes Licht}
+\newpage
+\subsection*{\centerline{Wie der Hirsch im großen Dürsten}}
+\addcontentsline{toc}{subsection}{Wie der Hirsch im großen Dürsten}
+\input{pg-Wie-der-Hirsch.tex}
+\index{Wie der Hirsch im großen Dürsten}
+\newpage
+
+%\newpage
+
+\section*{\centerline{\LARGE LOB UND DANK}}
+\addcontentsline{toc}{section}{LOB UND DANK}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte vom Loben und Danken}
+
+\centerline{\scshape Also hat Gott die Welt geliebt}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Das ist mir lieb, daß Gott, mein Hort}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Du meine Seele singe}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Geh aus, mein Herz, und suche Freud}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Gott Lob! Nun ist erschollen}                %witt:Gottlob
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Herr, dir trau ich all mein Tage}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Herr, du erforschest meinen Sinn}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich danke dir mit Freuden}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich, der ich oft in tiefes Leid}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich preise dich und singe}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich singe dir mit Herz und Mund}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich will erhöhen immerfort}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Ich will mit Danken kommen}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Merkt auf, merkt, Himmel, Erde}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Nun danket all und bringet Ehr}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Nun geht frisch drauf, es geht nach Haus}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Nun ist der Regen hin}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Sollt ich meinen Gott nicht singen?}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Unter allen, die da leben}                %witt:?  --> Lob und Dank
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Wer wohlauf ist und gesund}
+\vspace*{0.8\baselineskip}
+\centerline{\scshape Wie ist es möglich, höchstes Licht?}
+
+\newpage
+
+\subsection*{\centerline{Also hat Gott die Welt geliebt}}
+\addcontentsline{toc}{subsection}{Also hat Gott die Welt geliebt}
+\input{pg-Also-hat-Gott.tex}
+\index{Also hat Gott die Welt geliebt}
+\newpage
+\subsection*{\centerline{Das ist mir lieb, daß Gott, mein Hort}}
+\addcontentsline{toc}{subsection}{Das ist mir lieb daß Gott mein Hort}
+\input{pg-Das-ist-mir.tex}
+\index{Das ist mir lieb}
+\newpage
+\subsection*{\centerline{Du meine Seele singe}}
+\addcontentsline{toc}{subsection}{Du meine Seele singe}
+\input{pg-Du-meine-Seele.tex}
+\index{Du meine Seele singe}
+\newpage
+\subsection*{\centerline{Geh aus, mein Herz, und suche Freud}}
+\addcontentsline{toc}{subsection}{Geh aus mein Herz und suche Freud}
+\input{pg-Geh-aus-mein.tex}
+\index{Geh aus, mein Herz und suche Freud}
+\newpage
+\subsection*{\centerline{Gott Lob! Nun ist erschollen}}         %witt:Gottlob
+\addcontentsline{toc}{subsection}{Gott Lob! Nun ist erschollen}         %witt:Gottlob}
+\input{pg-Gott-Lob!-Nun.tex}
+\index{Gott Lob, nun ist erschollen}
+\newpage
+\subsection*{\centerline{Herr, dir trau ich all mein Tage}}
+\addcontentsline{toc}{subsection}{Herr dir trau ich all mein Tage}
+\input{pg-Herr-dir-trau.tex}
+\index{Herr, die trau ich alle Tage}
+\newpage
+\subsection*{\centerline{Herr, du erforschest meinen Sinn}}
+\addcontentsline{toc}{subsection}{Herr du erforschest meinen Sinn}
+\input{pg-Herr-du-erforschest.tex}
+\index{Herr, du erforschest meinen Sinn}
+\newpage
+\subsection*{\centerline{Ich danke dir mit Freuden}}
+\addcontentsline{toc}{subsection}{Ich danke dir mit Freuden}
+\input{pg-Ich-danke-dir.tex}
+\index{Ich danke dir mit Freuden}
+\newpage
+\subsection*{\centerline{Ich, der ich oft in tiefes Leid}}
+\addcontentsline{toc}{subsection}{Ich der ich oft in tiefes Leid}
+\input{pg-Ich-der-ich.tex}
+\index{Ich, der ich oft in tiefes Leid}
+\newpage
+\subsection*{\centerline{Ich preise dich und singe}}
+\addcontentsline{toc}{subsection}{Ich preise dich und singe}
+\input{pg-Ich-preise-dich.tex}
+\index{Ich preise dich und singe}
+\newpage
+\subsection*{\centerline{Ich singe dir mit Herz und Mund}}
+\addcontentsline{toc}{subsection}{Ich singe dir mit Herz und Mund}
+\input{pg-Ich-singe-dir.tex}
+\index{Ich singe dir mit Herz und Mund}
+\newpage
+\subsection*{\centerline{Ich will erhöhen immerfort}}
+\addcontentsline{toc}{subsection}{Ich will erhöhen immerfort}
+\input{pg-Ich-will-erhoehen.tex}
+\index{Ich will erhöhen immerfort}
+\newpage
+\subsection*{\centerline{Ich will mit Danken kommen}}
+\addcontentsline{toc}{subsection}{Ich will mit Danken kommen}
+\input{pg-Ich-will-mit.tex}
+\index{Ich will mit Danken kommmen}
+\newpage
+\subsection*{\centerline{Merkt auf, merkt, Himmel, Erde}}
+\addcontentsline{toc}{subsection}{Merkt auf merkt Himmel Erde}
+\input{pg-Merkt-auf-merkt.tex}
+\index{Merkt auf, Himmel, Erde}
+\newpage
+\subsection*{\centerline{Nun danket all und bringet Ehr}}
+\addcontentsline{toc}{subsection}{Nun danket all und bringet Ehr}
+\input{pg-Nun-danket-all.tex}
+\index{Nun danked all}
+\newpage
+\subsection*{\centerline{Nun geht frisch drauf, es geht nach Haus}}
+\addcontentsline{toc}{subsection}{Nun geht frisch drauf es geht nach Haus}
+\input{pg-Nun-geht-frisch.tex}
+\index{Nun geht frisch drauf}
+\newpage
+\subsection*{\centerline{Nun ist der Regen hin}}
+\addcontentsline{toc}{subsection}{Nun ist der Regen hin}
+\input{pg-Nun-ist-der.tex}
+\index{Nun ist der Regen hin}
+\newpage
+\subsection*{\centerline{Sollt ich meinen Gott nicht singen?}}
+\addcontentsline{toc}{subsection}{Sollt ich meinen Gott nicht singen?}
+\input{pg-Sollt-ich-meinen.tex}
+\index{Sollt ich meinem Gott nicht singen}
+\newpage
+\subsection*{\centerline{Unter allen, die da leben}}                    %witt:?  --> Lob und Dank
+\addcontentsline{toc}{subsection}{Unter allen die da leben}
+\input{pg-Unter-allen-die.tex}
+\index{Unter allen, die da leben}
+\newpage
+\subsection*{\centerline{Wer wohlauf ist und gesund}}
+\addcontentsline{toc}{subsection}{Wer wohlauf ist und gesund}
+\input{pg-Wer-wohlauf-ist.tex}
+\index{Wer wohlauf ist und gesund}
+\newpage
+\subsection*{\centerline{Wie ist es möglich, höchstes Licht?}}
+\addcontentsline{toc}{subsection}{Wie ist es möglich höchstes Licht?}
+\input{pg-Wie-ist-es.tex}
+\index{Wie ist es möglich, höchstes Licht}
+\newpage
+
+\newpage
+
+\section*{\centerline{\LARGE LEBEN UND ARBEIT}}
+\addcontentsline{toc}{section}{LEBEN UND ARBEIT}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte über Leben und Arbeit}
+
+\centerline{\scshape Der aller Herz und Willen lenkt}
+\vspace*{2\baselineskip}
+\centerline{\scshape Der Herr, der aller Enden}
+\vspace*{2\baselineskip}
+\centerline{\scshape Ein Weib, das Gott den Herren liebt}
+\vspace*{2\baselineskip}
+\centerline{\scshape Hört an, ihr Völker, hört doch an}
+\vspace*{2\baselineskip}  
+\centerline{\scshape Ich hab oft bei mir selbst gedacht}
+\vspace*{2\baselineskip}  
+\centerline{\scshape Ich weiß, mein Gott, daß all mein Tun}
+\vspace*{2\baselineskip}
+\centerline{\scshape Tapfre Leute soll man loben}
+\vspace*{2\baselineskip}  
+\centerline{\scshape Voller Wunder, voller Kunst}
+\vspace*{2\baselineskip}
+\centerline{\scshape Weltskribenten und Poeten}                          %witt:? --> Leben
+\vspace*{2\baselineskip}
+\centerline{\scshape Wie schön ists doch, Herr Jesu Christ}
+\vspace*{2\baselineskip}
+\centerline{\scshape Wohl dem, der den Herren scheuet}
+\vspace*{2\baselineskip}
+\centerline{\scshape Wohl dem Menschen, der nicht wandelt}
+\vspace*{2\baselineskip}
+\centerline{\scshape Zweierlei bitt ich von dir}
+
+\newpage
+
+\subsection*{\centerline{Der aller Herz und Willen lenkt}}            %witt:? -- Hochzeit --> Leben
+\addcontentsline{toc}{subsection}{Der aller Herz und Willen lenkt}            %witt:? -- Hochzeit --> Leben}
+\input{pg-Der-aller-Herz.tex}
+\index{Der aller Herz und Willen lenkt}
+\newpage
+\subsection*{\centerline{Der Herr, der aller Enden}}
+\addcontentsline{toc}{subsection}{Der Herr der aller Enden}
+\input{pg-Der-Herr-der.tex}
+\index{Der Herr, der aller Enden}
+\newpage
+\subsection*{\centerline{Ein Weib, das Gott den Herren liebt}}
+\addcontentsline{toc}{subsection}{Ein Weib das Gott den Herren liebt}
+\input{pg-Ein-Weib-das.tex}
+\index{Ein Weib, das Gott den Herren liebt}
+\newpage
+\subsection*{\centerline{Hört an, ihr Völker, hört doch an}}
+\addcontentsline{toc}{subsection}{Hört an ihr Völker hört doch an}
+\input{pg-Hoert-an-ihr.tex}
+\index{Hört an ihr Völker}
+\newpage
+\subsection*{\centerline{Ich hab oft bei mir selbst gedacht}}
+\addcontentsline{toc}{subsection}{Ich hab oft bei mir selbst gedacht}
+\input{pg-Ich-hab-oft.tex}
+\index{Ich hab oft bei mir selbst gedacht}
+\newpage
+\subsection*{\centerline{Ich weiß, mein Gott, daß all mein Tun}}
+\addcontentsline{toc}{subsection}{Ich weiß mein Gott daß all mein Tun}
+\input{pg-Ich-weiss-mein.tex}
+\index{Ich weiß, main Gott, daß all mein Tun}
+\newpage
+\subsection*{\centerline{Tapfre Leute soll man loben}}
+\addcontentsline{toc}{subsection}{Tapfre Leute soll man loben}
+\input{pg-Tapfre-Leute-soll.tex}
+\index{Tapfre Leute soll man loben}
+\newpage
+\subsection*{\centerline{Voller Wunder, voller Kunst}}
+\addcontentsline{toc}{subsection}{Voller Wunder voller Kunst}
+\input{pg-Voller-Wunder-voller.tex}
+\index{Voller Wunder, voller Kunst}
+\newpage
+\subsection*{\centerline{Weltskribenten und Poeten}}                  %witt:? --> Leben
+\addcontentsline{toc}{subsection}{Weltskribenten und Poeten}                  %witt:? --> Leben}
+\input{pg-Weltskribenten-und-Poeten.tex}
+\index{Weltscribenten und Poeten}
+\newpage
+\subsection*{\centerline{Wie schön ists doch, Herr Jesu Christ}}
+\addcontentsline{toc}{subsection}{Wie schön ists doch Herr Jesu Christ}
+\input{pg-Wie-schoen-ists.tex}
+\index{Wie schön ists doch}
+\newpage
+\subsection*{\centerline{Wohl dem, der den Herren scheuet}}
+\addcontentsline{toc}{subsection}{Wohl dem der den Herren scheuet}
+\input{pg-Wohl-dem-der.tex}
+\index{Wohl dem, der den Herren scheuet}
+\newpage
+\subsection*{\centerline{Wohl dem Menschen, der nicht wandelt}}
+\addcontentsline{toc}{subsection}{Wohl dem Menschen der nicht wandelt}
+\input{pg-Wohl-dem-Menschen.tex}
+\index{Wohl dem Menschen}
+\newpage
+\subsection*{\centerline{Zweierlei bitt ich von dir}}
+\addcontentsline{toc}{subsection}{Zweierlei bitt ich von dir}
+\input{pg-Zweierlei-bitt-ich.tex}
+\index{Zweierlei bitt ich von dir}
+\newpage
+
+\newpage
+
+\section*{\centerline{\LARGE MORGEN UND ABEND}}
+\addcontentsline{toc}{section}{MORGEN UND ABEND}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte über Morgen und Abend}
+
+\centerline{\scshape Die güldne Sonne}
+\vspace*{2\baselineskip}
+\centerline{\scshape Lobet den Herren alle, die ihn fürchten!}
+\vspace*{2\baselineskip}
+\centerline{\scshape Wach auf, mein Herz, und singe!}
+\vspace*{2\baselineskip}
+\centerline{\scshape Der Tag mit seinem Lichte}
+\vspace*{2\baselineskip}
+\centerline{\scshape Nun ruhen alle Wälder}
+
+\newpage
+
+\subsection*{\centerline{Die güldne Sonne}}
+\addcontentsline{toc}{subsection}{Die güldne Sonne}
+\input{pg-Die-gueldne-Sonne.tex}
+\index{Die güldne Sonne}
+\newpage
+\subsection*{\centerline{Lobet den Herren alle, die ihn fürchten!}}
+\addcontentsline{toc}{subsection}{Lobet den Herren alle die ihn fürchten!}
+\input{pg-Lobet-den-Herren.tex}
+\index{Lobet den Herren}
+\newpage
+%wiit: Lobet den Herren, lobet den Herren, alle, die ihn ehren
+\subsection*{\centerline{Wach auf, mein Herz, und singe!}}
+\addcontentsline{toc}{subsection}{Wach auf mein Herz und singe!}
+\input{pg-Wach-auf-mein.tex}
+\index{Wach auf mein Herz und singe}
+\newpage
+\subsection*{\centerline{Der Tag mit seinem Lichte}}
+\addcontentsline{toc}{subsection}{Der Tag mit seinem Lichte}
+\input{pg-Der-Tag-mit.tex}
+\index{Der Tag mit seinem Lichte}
+\newpage
+\subsection*{\centerline{Nun ruhen alle Wälder}}
+\addcontentsline{toc}{subsection}{Nun ruhen alle Wälder}
+\input{pg-Nun-ruhen-alle.tex}
+\index{Nun ruhen alle Wälder}
+\newpage
+
+\section*{\centerline{\LARGE STERBEN}}
+\addcontentsline{toc}{section}{STERBEN}
+\rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+\rule{\textwidth}{1.2pt}\\[\baselineskip]
+
+\index{ Gedichte von Tod und Sterben}
+
+\centerline{\scshape Du bist zwar mein und bleibest mein}
+\vspace*{2\baselineskip}
+\centerline{\scshape Erhebe dich, betrübtes Herz}                %witt:? --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Herr Gott, du bist ja für und für}
+\vspace*{2\baselineskip}
+\centerline{\scshape Herr Lindholtz legt sich hin}               %witt:? --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich bin ein Gast auf Erden}
+\vspace*{2\baselineskip}
+\centerline{\scshape Ich weiß, daß mein Erlöser lebt}
+\vspace*{2\baselineskip}
+\centerline{\scshape Johannes sahe durch Gesicht}
+\vspace*{2\baselineskip}
+\centerline{\scshape Leid ist mirs in meinem Herzen}             %witt:?  --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Liebes Kind, wenn ich bei mir}              %witt:? --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Mein Gott, ich habe mir}
+\vspace*{2\baselineskip}
+\centerline{\scshape Mein herzer Vater, weint ihr noch?}
+\vspace*{2\baselineskip}
+\centerline{\scshape Nun sei getrost und unbetrübt}
+\vspace*{2\baselineskip}
+\centerline{\scshape O Tod, o Tod, du greulichs Bild}
+\vspace*{2\baselineskip}
+\centerline{\scshape O, wie so ein großes Gut}                   %witt:? --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape So geht der alte liebe Herr nun auch dahin} %witt:? --> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Was trauerst du, mein Angesicht}
+\vspace*{2\baselineskip}
+\centerline{\scshape Weint, und weint gleichwohl nicht zu sehr}  %witt:?--> Sterben
+\vspace*{2\baselineskip}
+\centerline{\scshape Wer selig stirbt, stirbt nicht}             %witt:? --> Sterben
+
+\newpage
+
+\subsection*{\centerline{Du bist zwar mein und bleibest mein}}
+\addcontentsline{toc}{subsection}{Du bist zwar mein und bleibest mein}
+\input{pg-Du-bist-zwar.tex}
+\index{Du bist zwar mein und bleibest mein}
+\newpage
+\subsection*{\centerline{Erhebe dich, betrübtes Herz}}           %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{Erhebe dich betrübtes Herz}           %witt:? --> Sterben}
+\input{pg-Erhebe-dich-betruebtes.tex}
+\index{Erhebe dich, betrübtes Herz}
+\newpage
+\subsection*{\centerline{Herr Gott, du bist ja für und für}}
+\addcontentsline{toc}{subsection}{Herr Gott du bist ja für und für}
+\input{pg-Herr-Gott-du.tex}
+\index{Herr Gott, du bist ja für und für}
+\newpage
+\subsection*{\centerline{Herr Lindholtz legt sich hin}}          %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{Herr Lindholtz legt sich hin}          %witt:? --> Sterben}
+\input{pg-Herr-Lindholtz-legt.tex}
+\index{Herr Lindholz legt sich hin}
+\newpage
+\subsection*{\centerline{Ich bin ein Gast auf Erden}}
+\addcontentsline{toc}{subsection}{Ich bin ein Gast auf Erden}
+\input{pg-Ich-bin-ein.tex}
+\index{Ich bin ein Gast auf Erden}
+\newpage
+\subsection*{\centerline{Ich weiß, daß mein Erlöser lebt}}
+\addcontentsline{toc}{subsection}{Ich weiß daß mein Erlöser lebt}
+\input{pg-Ich-weiss-dass.tex}
+\index{Ich weiß, daß mein Erlöser lebt}
+\newpage
+\subsection*{\centerline{Johannes sahe durch Gesicht}}
+\addcontentsline{toc}{subsection}{Johannes sahe durch Gesicht}
+\input{pg-Johannes-sahe-durch.tex}
+\index{Johannes sahe durch Gesicht}
+\newpage
+\subsection*{\centerline{Leid ist mirs in meinem Herzen}}        %witt:?  --> Sterben
+\addcontentsline{toc}{subsection}{Leid ist mirs in meinem Herzen}        %witt:?  --> Sterben}
+\input{pg-Leid-ist-mirs.tex}
+\index{Leid ist mirs in meinem Herzen}
+\newpage
+\subsection*{\centerline{Liebes Kind, wenn ich bei mir}}         %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{Liebes Kind wenn ich bei mir}         %witt:? --> Sterben}
+\input{pg-Liebes-Kind-wenn.tex}
+\index{Liebes Kind, wenn ich bei mir}
+\newpage
+\subsection*{\centerline{Mein Gott, ich habe mir}}
+\addcontentsline{toc}{subsection}{Mein Gott ich habe mir}
+\input{pg-Mein-Gott-ich.tex}
+\index{Mein Gott, ich habe mir}
+\newpage
+\subsection*{\centerline{Mein herzer Vater, weint ihr noch?}}    %witt: Herzensvater
+\addcontentsline{toc}{subsection}{Mein herzer Vater weint ihr noch?}    %witt: Herzensvater}
+\input{pg-Mein-herzer-Vater.tex}
+\index{Mein herzer Vater, weint ihr noch}
+\newpage
+\subsection*{\centerline{Nun sei getrost und unbetrübt}}
+\addcontentsline{toc}{subsection}{Nun sei getrost und unbetrübt}
+\input{pg-Nun-sei-getrost.tex}
+\index{Nun sei getrost und unbetrübt}
+\newpage
+\subsection*{\centerline{O, wie so ein großes Gut}}              %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{O wie so ein großes Gut}              %witt:? --> Sterben}
+\input{pg-O-wie-so.tex}
+\index{O, wie so ein großes Gut}
+\newpage
+\subsection*{\centerline{O Tod, o Tod, du greulichs Bild}}
+\addcontentsline{toc}{subsection}{O Tod o Tod du greulichs Bild}
+\input{pg-O-Tod-o.tex}
+\index{O Tod, du greulichs Bild}
+\newpage
+\subsection*{\centerline{So geht der alte liebe Herr nun auch dahin}}    %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{So geht der alte liebe Herr nun auch dahin}    %witt:? --> Sterben}
+\input{pg-So-geht-der.tex}
+\index{So geht der alte liebe Herr}
+\newpage
+\subsection*{\centerline{Was trauerst du, mein Angesicht?}}
+\addcontentsline{toc}{subsection}{Was trauerst du mein Angesicht?}
+\input{pg-Was-trauerst-du.tex}
+\index{Was trauerst du, mein Angesicht?}
+\newpage
+\subsection*{\centerline{Weint, und weint gleichwohl nicht zu sehr}}     %witt:?--> Sterben
+\addcontentsline{toc}{subsection}{Weint und weint gleichwohl nicht zu sehr}     %witt:?--> Sterben}
+\input{pg-Weint-und-weint.tex}
+\index{Weint und weint gleichwohl}
+\newpage
+\subsection*{\centerline{Wer selig stirbt, stirbt nicht}}                %witt:? --> Sterben
+\addcontentsline{toc}{subsection}{Wer selig stirbt stirbt nicht}                %witt:? --> Sterben}
+\input{pg-Wer-selig-stirbt.tex}
+\index{Wer selig stirbt, stirbt nicht}
+\newpage
+
+\backmatter% ------------------------------------------------------------------------
+%\input{pg-backmatter.tex}
+
+\renewcommand{\indexname}{
+  \begin{center}
+    {\LARGE INDEX}
+  \end{center}
+  \rule{\textwidth}{0.2pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+  \rule{\textwidth}{1.2pt}\\%[\baselineskip]
+}
+\printindex
+
+%\addcontentsline{toc}{section}{INDEX}
+\end{document}
